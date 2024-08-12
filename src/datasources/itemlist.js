@@ -1,49 +1,46 @@
 export default {
 
-    // 커피리스트 
-
-    coffeeList : [
+    // 순반 트럭 리스트
+    CarList : [
         {   
-            "Id" : 101,
-            "Title" : "아메리카노",
-            "Info" : "폴 바셋 시그니처 블렌드로 추출한 에스프레소로 만든 부드럽고 깔끔한 가장 대중적인 커피 메뉴입니다.",
-            "BasePrice" : "4700",
-            "imgUrl": require("@/assets/빵/D.O.C.jpg"),
-            "imgUrlOption" : {
-                "hotImg" : require("@/assets/빵/D.O.C.jpg"),
-                "iceImg" : require("@/assets/빵/D.O.C.jpg")
-            },
-            "mainOptions": {
-                "IceHot" : true,
-                "cupType" : true, 
-            },
-            "personalOptions": {
-                "extraShot" : true,
-                "waterAmount": true
-            }
-        }
+            "id" : 1,
+            "storeCarName" : "순대에반하다 성남점",
+            "sunbanTime" : "영업시간트럭",
+            "instagram" : "인스타그램",
+            "loc_x" : "ㅇ",
+            "loc_y" : "ㅇ",
+            "imgUrl": require("@/assets/img/store_1.jpg"),
+            "address" : "차주소",
+            "sunbanMessage" : "ㅇ"
+        },
     ],
 
-    LetteList : [
+    //순반 매장 리스트
+    StoreList : [
         {   
-            "Id" : 104,
-            "Title" : "카페라떼",
-            "Info" : "전통적으로 조식에 잘 마셨던 것으로 알려진 카페라떼는 에스프레소와 우유의 절묘한 조화가 매력적인 커피입니다. 에스프레소 드링크 중에서도 특히 부드럽고 향긋한 맛을 자랑합니다",
-            "BasePrice" : "5700",
-            "imgUrl": require("@/assets/빵/딸기생크림케이크.png"),
-            "imgUrlOption" : {
-                "hotImg" : require("@/assets/빵/딸기생크림케이크.png"),
-                "iceImg" : require("@/assets/빵/딸기생크림케이크.png")
-            },
-            "mainOptions": {
-                "IceHot" : true,
-                "cupType" : true,
-                "size": true
-            },
-            "personalOptions": {
-                "extraShot" : true,
-                "milkType": true,
-            
-            }
-        }]
+            "id" : 1,
+            "storeName" : "순대에반하다 성남점",
+            "sunbanTime" : "영업시간가게",
+            "number" : "전화번호",
+            "loc_x" : "ㅇ",
+            "loc_y" : "ㅇ",
+            "imgUrl": require("@/assets/img/store_1.jpg"),
+            "address" : "가게주소",
+            "sunbanMessage" : "ㅇ"
+        },
+    ],
+
+    //순반 메뉴 리스트
+    menuList : [
+        {   
+            "id" : 1,
+            "kind" : "Group",
+            "menuName" : "모둠순대(소)",
+            "Configuration" : "찰순대, 토종순대, 김치순대, 두부순대",
+            "Price" : "7000",
+            "imgUrl": require("@/assets/img/store_1.jpg"),
+            "Favorite" : 32
+        },
+    ],
+
 }
